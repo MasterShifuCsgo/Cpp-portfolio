@@ -2,7 +2,6 @@
 #include <iostream>
 #include <fstream> // gives access to ifsteam objs
 #include <string>
-#include <cctype> // need std::isspace()
 
 int main(){
 
