@@ -1,2 +1,5 @@
-# Cpp-portfolio
-All my C++ programms
+#All my C++ programms
+
+## I don't maintain them!
+
+i dont add every C++ programm here!
