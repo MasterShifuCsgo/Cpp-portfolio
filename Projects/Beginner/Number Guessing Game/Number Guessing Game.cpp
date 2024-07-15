@@ -31,7 +31,7 @@ int main()
         std::cout << "Please specify the range >> ";
         std::cin >> user_range;
 
-        if (std::cin.fail()) // check if cin failed. (letter is put into an integral type)
+        if (std::cin.fail()) // check if cin failed. (if letter is inserted into an integral type)
         {
             std::system("cls");
             std::cout << "Please enter a valid value that does not deduce to 0. letters deduce to 0.\n";
