@@ -47,8 +47,8 @@ int main()
         ss.str(""); /*clear the ss var*/
 
         /*computer chooses random number from the specified range*/
-        time_t current_time = time(NULL); // seed is the current time.
-        srand(current_time);
+        time_t current_time = time(NULL); 
+        srand(current_time); // seed is the current time.
         unsigned int random_num = rand() % user_range; // creates random number for the computer to use. 0 - user_range
 
         std::system("cls"); // sets up the guessing part for the user, clears the terminal
@@ -59,7 +59,7 @@ int main()
         unsigned int user_guess_amount{};
         std::cout << "Begin Guessing the random number\n\n";
 
-        while (true) // breaks if the user guesses the right number
+        while (true) // loop ends if the user guesses the right number
         {
 
             /*user guessing random number the computer chose*/
@@ -78,9 +78,10 @@ int main()
                 std::system("cls");
                 break;
                 /*congradulates the user for guessing the number*/
+                std::cout << "\n\nCongratulations You guessed the number!! \n\n\t Com. " << random_num << " == " << user_guess_num << " You.\n" << std::endl;
             }
-            else if (user_guess_num == (user_range + 1))
-            { /*user wants to quit*/
+            else if (user_guess_num == (user_range + 1)) /*user wants to quit*/
+            { 
 
                 std::cout << "\nCom. num >> " << random_num;
                 std::cout << "\n\n\tGoodbye" << std::endl;
@@ -90,9 +91,6 @@ int main()
             user_guess_amount += 1;
         }
         /*User Guessed the number*/
-
-        std::cout << "\n\nCongratulations You guessed the number!! \n\n\t Com. " << random_num << " == " << user_guess_num << " You.\n"
-                  << std::endl;
 
         std::cout << "Tries: " << user_guess_amount << std::endl;
         std::cout << "Guess range 0 - " << user_range;
