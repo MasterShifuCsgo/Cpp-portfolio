@@ -53,7 +53,8 @@ if(std::remove( Filename ) == 0){
                     when expert level comes i is 2, because last time it was 1, 
                     which made it increment once again, it increments because i is 1, which makes is 2.
                     when it's any higher it goes out of the array.
-                
+
+                    Update: I was tired, so i couldnt figure it out. 17/7/2024
                 */
             }else{
                 //Write to a file function
