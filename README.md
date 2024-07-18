@@ -1,55 +1,55 @@
 # All my C++ programms
 
 ##  Beginners Level
-\nCGPA Calculator ** Done
-\nRock Paper Scissor ** Done
-\nCasino Number Guessing Game ** Done
-\nCalculator for Scientific Operations 
-\nLogin and Registration System
-\nStudent Database Management System
-\nInventory System
-\nPayroll System
-\nBanking System
-\nMedical Information System
-\nStock Management System
-\nHospital Management System
-\nSchool Management System
-\nHotel Management System
-\nLibrary Management System
-\nTraffic Management System
-\nHangman Game
-\nText-Based Adventure Game
-\nTrading Application
-\nSearch Engine
+<br/>CGPA Calculator ** Done
+<br/>Rock Paper Scissor ** Done
+<br/>Casino Number Guessing Game ** Done
+<br/>Calculator for Scientific Operations 
+<br/>Login and Registration System
+<br/>Student Database Management System
+<br/>Inventory System
+<br/>Payroll System
+<br/>Banking System
+<br/>Medical Information System
+<br/>Stock Management System
+<br/>Hospital Management System
+<br/>School Management System
+<br/>Hotel Management System
+<br/>Library Management System
+<br/>Traffic Management System
+<br/>Hangman Game
+<br/>Text-Based Adventure Game
+<br/>Trading Application
+<br/>Search Engine
 ##   Intermediate Level
-\nSnake Game
-\nText Editor
-\nTic-Tac-Toe
-\nMinesweeper Game
-\nPhonebook Application
-\nUsing Wake-on-LAN protocol to remote power On a PC
-\nSingle-colored Blank Image using OpenCV
-\nOpenCV Project for Image Blur
-\nOpenCV to Play a Video
-\nOpenCV to Blur a Video
-\nOpenCV Project for Shape Detection
-\nOpenCV Project for Face Detection
-\nOpenCV Project for Coin Detection
-\nMusic Player
-\nCryptography Application
+<br/>Snake Game
+<br/>Text Editor
+<br/>Tic-Tac-Toe
+<br/>Minesweeper Game
+<br/>Phonebook Application
+<br/>Using Wake-on-LAN protocol to remote power On a PC
+<br/>Single-colored Blank Image using OpenCV
+<br/>OpenCV Project for Image Blur
+<br/>OpenCV to Play a Video
+<br/>OpenCV to Blur a Video
+<br/>OpenCV Project for Shape Detection
+<br/>OpenCV Project for Face Detection
+<br/>OpenCV Project for Coin Detection
+<br/>Music Player
+<br/>Cryptography Application
 ##    Expert Level
-\nPassword Manager
-\nBall Game using OpenGL
-\nHelicopter Game
-\nWeb Browser
-\nFinding Nearby Cabs
-\nOnline Exam System
-\nOnline Voting System
-\nOnline Ticket Reservation System
-\nOnline Job Portal
-\nOnline Food Ordering System
-\nOnline Shopping System
-\nBlackjack with AI
-\nChess Game with AI
-\nBike Race Game
-\n3D Bounce Ball Game
+<br/>Password Manager
+<br/>Ball Game using OpenGL
+<br/>Helicopter Game
+<br/>Web Browser
+<br/>Finding Nearby Cabs
+<br/>Online Exam System
+<br/>Online Voting System
+<br/>Online Ticket Reservation System
+<br/>Online Job Portal
+<br/>Online Food Ordering System
+<br/>Online Shopping System
+<br/>Blackjack with AI
+<br/>Chess Game with AI
+<br/>Bike Race Game
+<br/>3D Bounce Ball Game
