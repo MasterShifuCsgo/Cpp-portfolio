@@ -35,7 +35,14 @@ class Display
         formatted_display.str("");
     }
 
-    std::string available_operations{"+-*/"};
+    void clear_user_based_variables()
+    {
+        std::vector<double> user_numbers{};
+        std::vector<char> user_operations{};
+        std::string G_user_calculation{};
+    }
+
+    std::string available_operations{"+-*/^"};
     double calculator(double &a, double &b, const char &method)
     {
 
@@ -51,10 +58,11 @@ class Display
             return a * b;
         case 3:
             return a / b;
-        default:
-            std::cout << "Error. method does not correspond to available operations. return 0;";
-            return 0;
+        case 4:
+            return std::pow(a, b);
         }
+
+        return 0;
     }
 
     void Clear_numRow()
@@ -118,8 +126,8 @@ public:
 
     void Filter_calculation_and_store()
     {
-        size_t last_iteration{0};
-        size_t last_operator{0};
+
+        size_t number{0};
 
         bool is_user_calc_clean = is_computable(G_user_calculation);
 
@@ -140,21 +148,18 @@ public:
                 }
                 else
                 {
-                    /*when 33+3 dosent work it adds 3,3,3 into the array find a fix*/
+                    /*when there are numbers like this 33 it adds them to the array like this 3, 3, fix this*/
 
-                    if (last_iteration == i + 1)
+                    if (number + 1 == i)
                     {
 
-                        user_numbers.at(last_operator) = user_numbers.at(last_operator) * std::pow(10, i - last_operator) + (G_user_calculation[i] - '0');
-                        last_operator = i;
-                    }
-                    else
-                    {
-                        user_numbers.push_back(G_user_calculation[i] - '0');
+                        user_numbers.at(user_numbers.size() - i) = user_numbers.at(user_numbers.size() - i) * 10 + G_user_calculation[i] - '0';
+                        std::cout << "user_numbers.at(" << user_numbers.size() - i << ") " << user_numbers.at(user_numbers.size() - 1) << std::endl;
                     }
 
-                    // user_numbers.push_back(G_user_calculation[i] - '0');
-                    size_t last_iteration = i;
+                    user_numbers.push_back(G_user_calculation[i] - '0');
+
+                    number = i;
                 }
             }
         }
@@ -185,8 +190,6 @@ public:
 
         double answer{};
 
-        double temp1, temp2;
-        std::string temp3;
         for (size_t i = 1; i < user_numbers.size(); i++)
         {
             /*check user_calculations value  right side from [i] to see if there are any numbers*/
@@ -194,7 +197,9 @@ public:
 
             answer += calculator(user_numbers[i - 1], user_numbers[i], user_operations[i - 1]);
         }
+
         std::cout << "Answer >> " << answer << "\n";
+        clear_user_based_variables();
     }
 };
 
