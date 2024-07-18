@@ -1,6 +1,6 @@
 # All my C++ programms
 
-all of these projects are in the project/ folder
+all of these projects are in the projects/ folder
 
 ##  Beginners Level
 <br/>CGPA Calculator &#x2714;
