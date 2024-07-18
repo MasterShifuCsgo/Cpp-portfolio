@@ -153,8 +153,8 @@ public:
                     if (number + 1 == i)
                     {
 
-                        user_numbers.at(user_numbers.size() - i) = user_numbers.at(user_numbers.size() - i) * 10 + G_user_calculation[i] - '0';
-                        std::cout << "user_numbers.at(" << user_numbers.size() - i << ") " << user_numbers.at(user_numbers.size() - 1) << std::endl;
+                        user_numbers.at(user_numbers.size() - 1) = user_numbers.at(user_numbers.size() - 1) * 10 + G_user_calculation[i] - '0';
+                        std::cout << "user_numbers.at(" << user_numbers.size() - 1 << ") " << user_numbers.at(user_numbers.size() - 1) << std::endl;
                     }
 
                     user_numbers.push_back(G_user_calculation[i] - '0');
