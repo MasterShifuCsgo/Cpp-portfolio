@@ -1,55 +1,55 @@
 # All my C++ programms
 
 ##  Beginners Level
-CGPA Calculator ** Done
-Rock Paper Scissor ** Done
-Casino Number Guessing Game ** Done
-Calculator for Scientific Operations 
-Login and Registration System
-Student Database Management System
-Inventory System
-Payroll System
-Banking System
-Medical Information System
-Stock Management System
-Hospital Management System
-School Management System
-Hotel Management System
-Library Management System
-Traffic Management System
-Hangman Game
-Text-Based Adventure Game
-Trading Application
-Search Engine
+\nCGPA Calculator ** Done
+\nRock Paper Scissor ** Done
+\nCasino Number Guessing Game ** Done
+\nCalculator for Scientific Operations 
+\nLogin and Registration System
+\nStudent Database Management System
+\nInventory System
+\nPayroll System
+\nBanking System
+\nMedical Information System
+\nStock Management System
+\nHospital Management System
+\nSchool Management System
+\nHotel Management System
+\nLibrary Management System
+\nTraffic Management System
+\nHangman Game
+\nText-Based Adventure Game
+\nTrading Application
+\nSearch Engine
 ##   Intermediate Level
-Snake Game
-Text Editor
-Tic-Tac-Toe
-Minesweeper Game
-Phonebook Application
-Using Wake-on-LAN protocol to remote power On a PC
-Single-colored Blank Image using OpenCV
-OpenCV Project for Image Blur
-OpenCV to Play a Video
-OpenCV to Blur a Video
-OpenCV Project for Shape Detection
-OpenCV Project for Face Detection
-OpenCV Project for Coin Detection
-Music Player
-Cryptography Application
+\nSnake Game
+\nText Editor
+\nTic-Tac-Toe
+\nMinesweeper Game
+\nPhonebook Application
+\nUsing Wake-on-LAN protocol to remote power On a PC
+\nSingle-colored Blank Image using OpenCV
+\nOpenCV Project for Image Blur
+\nOpenCV to Play a Video
+\nOpenCV to Blur a Video
+\nOpenCV Project for Shape Detection
+\nOpenCV Project for Face Detection
+\nOpenCV Project for Coin Detection
+\nMusic Player
+\nCryptography Application
 ##    Expert Level
-Password Manager
-Ball Game using OpenGL
-Helicopter Game
-Web Browser
-Finding Nearby Cabs
-Online Exam System
-Online Voting System
-Online Ticket Reservation System
-Online Job Portal
-Online Food Ordering System
-Online Shopping System
-Blackjack with AI
-Chess Game with AI
-Bike Race Game
-3D Bounce Ball Game
+\nPassword Manager
+\nBall Game using OpenGL
+\nHelicopter Game
+\nWeb Browser
+\nFinding Nearby Cabs
+\nOnline Exam System
+\nOnline Voting System
+\nOnline Ticket Reservation System
+\nOnline Job Portal
+\nOnline Food Ordering System
+\nOnline Shopping System
+\nBlackjack with AI
+\nChess Game with AI
+\nBike Race Game
+\n3D Bounce Ball Game
