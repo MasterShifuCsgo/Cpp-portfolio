@@ -37,9 +37,8 @@ class Display
 
     void clear_user_based_variables()
     {
-        std::vector<double> user_numbers{};
-        std::vector<char> user_operations{};
-        std::string G_user_calculation{};
+        user_numbers.clear();
+        user_operations.clear();
     }
 
     std::string available_operations{"+-*/^"};
@@ -152,9 +151,12 @@ public:
 
                     if (number + 1 == i)
                     {
+                        /*user_numbers.size() - 1 is the last element that was added*/
 
-                        user_numbers.at(user_numbers.size() - 1) = user_numbers.at(user_numbers.size() - 1) * 10 + G_user_calculation[i] - '0';
-                        std::cout << "user_numbers.at(" << user_numbers.size() - 1 << ") " << user_numbers.at(user_numbers.size() - 1) << std::endl;
+                        int last_element = user_numbers.size() - 1;
+
+                        user_numbers.at(last_element) = user_numbers.at(last_element) * 10 + G_user_calculation[i] - '0';
+                        std::cout << "user_numbers.at(" << last_element << ") is " << user_numbers.at(last_element) << std::endl;
                     }
 
                     user_numbers.push_back(G_user_calculation[i] - '0');
@@ -188,17 +190,18 @@ public:
     void Calculate()
     {
 
-        double answer{};
+        std::vector<double> answer{};
 
         for (size_t i = 1; i < user_numbers.size(); i++)
         {
             /*check user_calculations value  right side from [i] to see if there are any numbers*/
             /* double calculator(double &a, double &b, const char &method) */
 
-            answer += calculator(user_numbers[i - 1], user_numbers[i], user_operations[i - 1]);
+            answer.push_back(calculator(user_numbers[i - 1], user_numbers[i], user_operations[i - 1]));
         }
 
-        std::cout << "Answer >> " << answer << "\n";
+        std::cout << "Answer >> " << answer[answer.size() - 1] << std::endl;
+
         clear_user_based_variables();
     }
 };
