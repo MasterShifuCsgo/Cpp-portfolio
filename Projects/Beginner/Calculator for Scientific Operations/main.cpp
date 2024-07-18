@@ -41,7 +41,7 @@ class Display
         user_operations.clear();
     }
 
-    std::string available_operations{"+-*/^"};
+    std::string available_operations{"+-*/^%"};
     double calculator(double &a, double &b, const char &method)
     {
 
@@ -59,6 +59,9 @@ class Display
             return a / b;
         case 4:
             return std::pow(a, b);
+        case 5:
+            std::cout << "Modulo not available in this calculator\n";
+            break;
         }
 
         return 0;
