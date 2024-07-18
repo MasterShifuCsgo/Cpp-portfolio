@@ -1,5 +1,7 @@
 # All my C++ programms
 
+all of these projects are in the project/ folder
+
 ##  Beginners Level
 <br/>CGPA Calculator ** Done
 <br/>Rock Paper Scissor ** Done
