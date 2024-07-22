@@ -1,12 +1,14 @@
 # All my C++ programms
 
+https://www.geeksforgeeks.org/top-50-cpp-project-ideas-for-beginners-advanced/
 all of these projects are in the projects/ folder
 
-##  Beginners Level
+## Beginners Level
+
 <br/>CGPA Calculator &#x2714;
 <br/>Rock Paper Scissor &#x2714;
 <br/>Casino Number Guessing Game &#x2714;
-<br/>Calculator for Scientific Operations 
+<br/>Calculator for Scientific Operations &#127959;&#65039; Basic functionalities but isn't done, when 3\*3+3 is input then asnwer is 6 not 12
 <br/>Login and Registration System
 <br/>Student Database Management System
 <br/>Inventory System
@@ -23,7 +25,9 @@ all of these projects are in the projects/ folder
 <br/>Text-Based Adventure Game
 <br/>Trading Application
 <br/>Search Engine
-##   Intermediate Level
+
+## Intermediate Level
+
 <br/>Snake Game
 <br/>Text Editor
 <br/>Tic-Tac-Toe
@@ -39,7 +43,9 @@ all of these projects are in the projects/ folder
 <br/>OpenCV Project for Coin Detection
 <br/>Music Player
 <br/>Cryptography Application
-##    Expert Level
+
+## Expert Level
+
 <br/>Password Manager
 <br/>Ball Game using OpenGL
 <br/>Helicopter Game
