@@ -52,7 +52,7 @@ public:
             while (std::getline(wordleAnswers, temp_word))
             {
 
-                float brackets = i / 9;
+                float brackets = i % temp_word.length();
 
                 std::cout << "Iteration: " << i << std::endl;
 
@@ -61,6 +61,7 @@ public:
                     i++;
                 }
 
+                /*this part is not important*/
                 int i{};
                 for (auto &color : user_letter_colors)
                 {
@@ -68,7 +69,9 @@ public:
                     std::cout << color << "\n count > " << user_letters[i];
                     i++;
                 }
+                /*^^ this part is not important ^^*/
 
+                //<!--
                 /*why is segmentation fault happening?*/
                 if (user_letter_colors[brackets] == "green" && user_letters[brackets] == temp_word[brackets])
                 { /*if the letter is green and corresponds the same letter as in temp_word, add to the list*/
@@ -82,7 +85,7 @@ public:
                 { /*if color is gray or grey and letter is in the word, put the letter in the blacklist*/
                     blacklisted_letters.push_back(user_word[brackets]);
                 }
-
+                //--!>
                 i++;
             }
         }
