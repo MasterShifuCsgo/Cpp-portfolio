@@ -1,0 +1,1 @@
+git push --force origin main = forces all the commits and deletes/adds folders and files if necessary. be very careful when you use it. might delete very important files.
