@@ -1,36 +1,55 @@
 #include <iostream>
 #include <regex>
 #include <string>
+#include <vector>
+
+// tempates
+//  1. "(\\+\\-\\*/log\\(\\s*(-?\\d+)\\s*,\\s*(-?\\d+)\\s*\\))"
 
 class Calculator
 {
     // Member variables
+
     std::string calculation;
-    std::string regex_pattern{"(log\\(\\s*(-?\\d+)\\s*,\\s*(-?\\d+)\\s*\\))"};
-    std::regex reg; // staic member initialization.
-    std::smatch matches;
+
+    // regex
+    std::vector<std::string> regex_patterns{"(^\\d+(\\+\\-\\*/)\\d+)+$)",
+                                            "(\\+\\-\\*/log\\(\\s*(-?\\d+)\\s*,\\s*(-?\\d+)\\s*\\))",
+                                            "(\\+\\-\\*/pow\\(\\s*(-?\\d+)\\s*,\\s*(-?\\d+)\\s*\\))"}; // to create more functions use the template above the class.
+    std::smatch sm;
 
 public:
     // Constructor
     Calculator(const std::string &user_calculation_param)
-        : calculation(user_calculation_param),
-          reg(regex_pattern) // Initialize regex object
+        : calculation(user_calculation_param)
     {
     }
 
     // Method to calculate if the user calculation is valid
     bool isCalculationValid()
     {
-        // Use std::regex_search to check if the calculation matches the pattern
-        if (std::regex_search(calculation, matches, reg))
+        /*take the user calculation, find the default pattern and special patterns if they exist.
+         if default pattern doesn't exist return false, else look for special patterns*/
+        std::string backup = calculation;
+        // find the default pattern.
+
+        for (size_t i{}; i < regex_patterns.size(); i++)
         {
-            // saves all matches to matches smatch variable
-            return true;
-        }
-        else
-        {
-            std::cout << "No match!" << std::endl;
-            return false;
+
+            if (calculation == "")
+            {
+                return true;
+            }
+            if (std::regex_search(calculation, sm, std::regex(regex_patterns[i]))) // this loop looks for regex patters defined above.
+            {
+                // function finds a match; continues to find more matches and if there are no errors and the string is empty, the calcuation is valid.
+                // when i changes calculation stays the same, and will hinder the progress to the goal
+                calculation = sm.suffix();
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 };
@@ -54,14 +73,13 @@ int main()
         Calculator calculator(user_calculation);
 
         // Check if the calculation is valid
-        if (calculator.isCalculationValid())
+        if (!calculator.isCalculationValid())
         {
-            std::cout << "Calculation is valid." << std::endl;
+            std::cout << "Calculation is not valid." << std::endl;
+            exit(0);
         }
         else
         {
-            std::cout << "Calculation is not valid." << std::endl;
-            return 0;
         }
     }
 
