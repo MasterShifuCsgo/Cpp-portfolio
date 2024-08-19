@@ -8,7 +8,7 @@ all of these projects are in the projects/ folder
 <br/>CGPA Calculator &#x2714;
 <br/>Rock Paper Scissor &#x2714;
 <br/>Casino Number Guessing Game &#x2714;
-<br/>Calculator for Scientific Operations &#127959;&#65039; Basic functionalities but isn't done, when 3\*3+3 is input then asnwer is 6 not 12
+<br/>Calculator for Scientific Operations &#127959;&#65039;
 <br/>Login and Registration System
 <br/>Student Database Management System
 <br/>Inventory System
