@@ -15,7 +15,7 @@ int main()
         std::cout << "Enter your calculation >> ";
         std::getline(std::cin, equation);
 
-        Calculator calc(equation); // clenses the equation of unwanted things
+        Calculator calc(equation); // cleans the equation of unwanted elements, quits if it does.
     }
 
     return 0;

@@ -5,8 +5,8 @@
 
 void Calculator::error(std::string type, std::string message)
 {
-    std::cout << "Error occured:\n\t Error type:" << type
-              << "\n\tError message:" << message;
+    std::cout << "Error occured:\n\tError type:    " << type
+              << "\n\tError message: " << message;
     exit(1);
 }
 
@@ -83,37 +83,83 @@ void Calculator::isOpRowLegal(std::string &eq)
     }
 }
 
-int Calculator::fParamsNum(std::string &name)
+void Calculator::areFunctionArgsValid(std::string &eq)
 {
+    /*
+
+    onlt 1 param functions exist.
+    log(0.1)
+    log(1,2)
+    are illegal.
+
+    // check if there are '.' in between parentheses and if more than 1 argument is passed.
+    */
+
+    for (char &lt : eq)
+    {
+        if (lt == '.')
+        {
+            Calculator::error("invalid type", "found a '.' in your equtaion");
+        }
+
+        if (lt == ',')
+        {
+            Calculator::error("invalid type", "found a ',' in your function");
+        }
+    }
+}
+
+int Calculator::buildNum(std::string &eq, size_t &i)
+{
+
+    int result = 0;
+    bool isminus = false;
+    while (eq.size() > i)
+    {
+        if (eq[i] == '-')
+        {
+            isminus = true;
+            i++;
+        }
+
+        if (isdigit(eq[i]))
+        {
+            result = result * 10 + (static_cast<int>(eq[i]) - '0');
+        }
+        else
+        {
+            Calculator::error("operator", "Error encountered when building number");
+        }
+
+        i++;
+    }
+
+    if (isminus)
+    {
+        result = result * -1;
+    }
+
+    return result;
 }
 
 void Calculator::isfuncslegal(std::string &eq)
 {
-    /*
-log(x65) exept '-'
-log(x65,2) log only has 1 param, pow() doesn't
-log()
-log(65x2)
-
-log(log(2)) cant calculate multiple functions like so.
-    */
-
-    // part the looks for the function
 
     std::string func_name;
 
     for (size_t i = 0; eq.size(); i++)
     {
-        if (isalpha(eq[i]))
+        // part the looks for the function
+        if (isalpha(eq[i]) && eq[i + 3] == '(')
         { // found first letter of the function
           // maximum length of a functon is 3
 
             // save function name
             func_name = eq[i] + eq[i + 1] + eq[i + 2];
-            i += 3;
+            i += 4;
 
-            // check how many params does func take.
-            Calculator::fParamsNum(func_name);
+            // check if there are '.' or ',' in between parentheses and if more than 1 argument is passed.
+            areFunctionArgsValid(eq); // continues as normal if error isnt returned;
         }
     }
 }
