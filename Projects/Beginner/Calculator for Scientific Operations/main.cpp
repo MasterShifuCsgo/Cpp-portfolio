@@ -16,6 +16,7 @@ int main()
         std::getline(std::cin, equation);
 
         Calculator calc(equation); // cleans the equation of unwanted elements, quits if it does.
+        int result = calc.calculate(equation);
     }
 
     return 0;
