@@ -17,6 +17,7 @@ int main()
 
         Calculator calc(equation); // cleans the equation of unwanted elements, quits if it does.
         int result = calc.calculate(equation);
+        std::cout << ">> " << result;
     }
 
     return 0;
