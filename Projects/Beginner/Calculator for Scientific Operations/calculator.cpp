@@ -269,103 +269,75 @@ void Calculator::ComputeAndSubstituteFunctions(std::string &eq)
 
 double Calculator::arithCalc(std::string &eq)
 {
-    /*
-        "(1+ [2 ) / 3] + 1"
-        chooses one to calculate by value of the operators.
-        substitutes result to eq.
-
-        repeat
-    */
-
-    /*
-    when it finds the most valuable operator and tracks the start and end of the calculation (e.g "1/1")
-    holds the position if 1 and / 1 <-- number;
-    calculates
-    then replaces the area with the result.
-    */
-
-    /*
-    starts the search with the most valuable operator and then goes down to the lowest ranking op
-    looks for this operator in the function. if it finds it, it bulds the numbers left and right side.
-    */
-
     std::vector<char> ops = Calculator::operators;
 
     signed int right_num{};
     signed int left_num{};
     signed int num{};
 
-    int i = ops.size() - 1;
-
-    bool side = true;
-
-    std::vector<char>::iterator it = ops.end();
-
-    for (size_t j = 0; j < eq.size(); j++)
-    { // counts ops
-        for (; it != ops.begin(); --it)
-        { // counts letters in eq
-            std::cout << "loop" << '\n';
+    // Iterate through the operators from highest precedence to lowest
+    for (auto it = ops.rbegin(); it != ops.rend(); ++it)
+    {
+        for (size_t j = 0; j < eq.size(); ++j)
+        {
             if (eq[j] == *it)
             {
-                // build numbers left and right from the operator.
-                int j_save = j;
-                // build right and left side number.
-                while (isdigit(eq[j]))
+                // Reset num for each side
+                num = 0;
+
+                // Parse right-hand number
+                size_t pos = j + 1;
+                while (pos < eq.size() && isdigit(eq[pos]))
                 {
-                    num = num * 10 + static_cast<int>(eq[j] - '0');
-                    ++j;
+                    num = num * 10 + (eq[pos] - '0');
+                    ++pos;
                 }
-
-                j = j_save;
-
                 right_num = num;
-                std::cout << "right_num: " << right_num << '\n';
+                num = 0; // Reset num
 
-                while (isdigit(eq[j]))
+                // Parse left-hand number
+                pos = j - 1;
+                while (pos < eq.size() && isdigit(eq[pos]))
                 {
-                    num = num * 10 + static_cast<int>(eq[j] - '0');
-                    --j;
+                    num = num + (eq[pos] - '0') * static_cast<int>(std::pow(10, (j - 1 - pos)));
+                    --pos;
                 }
-                std::cout << "left_num: " << right_num << '\n';
+                left_num = num;
 
-                double result{};
-                std::cout << "*it: " << *it << '\n';
-
-                /*
-                    std::vector<char> ops{'+', '-', '*', '/', '^'};
-
-                    for (char l : ops)
-                    {
-                        int res = static_cast<int>('0' - l);
-                        std::cout << res << " = " << l << '\n';
-                    }
-
-                    //you enter your operators in the list, and run the file.
-                    //you can see their corresponding number.
-                */
-
-                switch (static_cast<int>('0' - *it))
+                // Perform the operation
+                double result = 0;
+                switch (*it)
                 {
-                case 5:
+                case '+':
                     result = left_num + right_num;
                     break;
-                case 3:
+                case '-':
                     result = left_num - right_num;
                     break;
-                case 6:
+                case '*':
                     result = left_num * right_num;
                     break;
-                case 1:
-                    result = left_num / right_num;
+                case '/':
+                    if (right_num != 0)
+                        result = static_cast<double>(left_num) / right_num;
+                    else
+                        std::cerr << "Division by zero error\n";
                     break;
-                case -46:
+                case '^':
                     result = std::pow(left_num, right_num);
                     break;
                 }
+
+                // Substitute result back into eq if needed (this part would depend on how you manage eq)
+                // For example, replacing "left_num op right_num" with the result
+
+                std::cout << "Result: " << result << '\n';
+                return result; // Return result for this operation
             }
         }
     }
+
+    return 0.0; // Return default value in case no operation was performed
 }
 
 int Calculator::calculate(std::string &eq)
