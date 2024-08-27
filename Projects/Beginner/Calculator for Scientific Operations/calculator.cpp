@@ -58,29 +58,34 @@ void Calculator::isOpRowLegal(std::string &eq)
     // operators xx
     std::vector<char> ops = Calculator::operators;
 
-    // O(n*m), possible optimization to O(n);
+    // O(n*m)
+
+    // could be O(n) if ops was an unordered_set or hash table.
     size_t n = eq.size();
     size_t m = ops.size();
 
-    size_t j = 0;
-    size_t k = 0;
-    char op1;
-    char op2;
+    bool is_op = false;
 
-    for (size_t i = 1; i < n; i++)
+    for (size_t i{0}; i < n; i++)
     {
-        op2 = ops[k];
-        k++;
-        while (m > j)
+        if (ispunct(eq[i]))
         {
-            op1 = ops[j];
-            if (eq[i - 1] == op1 && eq[i] == op2)
+            for (size_t j = 0; j < m; ++j)
             {
-                Calculator::error("operator", "found multiple operators x, xx in row");
+                if (eq[i] == ops[j])
+                {
+                    if (is_op)
+                    {
+                        Calculator::error("operator", "found ops beside each other");
+                    }
+                    is_op = true;
+                }
+                else
+                {
+                    is_op = false;
+                }
             }
-            j++;
         }
-        j = 0;
     }
 }
 
