@@ -280,6 +280,7 @@ double Calculator::arithCalc(std::string &eq)
     signed int left_num{};
     signed int num{};
 
+    std::string Snum{};
     // Iterate through the operators from highest precedence to lowest
     for (auto it = ops.rbegin(); it != ops.rend(); ++it)
     {
@@ -304,8 +305,13 @@ double Calculator::arithCalc(std::string &eq)
                 pos = j - 1;
                 while (pos < eq.size() && isdigit(eq[pos]))
                 {
-                    num = num + (eq[pos] - '0') * static_cast<int>(std::pow(10, (j - 1 - pos)));
+                    Snum = Snum + std::to_string((eq[pos] - '0'));
                     --pos;
+                }
+
+                for (size_t i = Snum.size() - 1; i != -1; --i)
+                {
+                    num = num * 10 + static_cast<double>(Snum[i] - '0');
                 }
                 left_num = num;
 
