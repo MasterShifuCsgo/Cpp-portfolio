@@ -6,19 +6,19 @@
 int main()
 {
 
-    std::cout << "Welcome to Scientific Calculator\n";
+  std::cout << "Welcome to Scientific Calculator\n";
 
-    while (true)
-    {
-        std::string equation;
-        std::cout << "\n------ScCalc------\n";
-        std::cout << "Enter your calculation >> ";
-        std::getline(std::cin, equation);
+  while (true)
+  {
+    std::string equation;
+    std::cout << "\n------ScCalc------\n";
+    std::cout << "Enter your calculation >> ";
+    std::getline(std::cin, equation);
 
-        Calculator calc(equation); // cleans the equation of unwanted elements, quits if it does.
-        int result = calc.calculate(equation);
-        std::cout << ">> " << result;
-    }
+    Calculator calc(equation); // cleans the equation of unwanted elements, quits if it does.
+    int result = calc.calculate(equation);
+    std::cout << ">> " << result;
+  }
 
-    return 0;
+  return 0;
 }
