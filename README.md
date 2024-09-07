@@ -8,8 +8,8 @@ all of these projects are in the projects/ folder
 <br/>CGPA Calculator &#x2714;
 <br/>Rock Paper Scissor &#x2714;
 <br/>Casino Number Guessing Game &#x2714;
-<br/>Calculator for Scientific Operations &#127959;&#65039;
-<br/>Login and Registration System
+<br/>Calculator for Scientific Operations &#x2714;
+<br/>Login and Registration System &#127959;&#65039; 
 <br/>Student Database Management System
 <br/>Inventory System
 <br/>Payroll System
