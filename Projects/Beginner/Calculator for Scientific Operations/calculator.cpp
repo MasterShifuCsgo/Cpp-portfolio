@@ -380,13 +380,16 @@ int Calculator::calculate(std::string &eq)
   int s{};
   int e{};
 
+  bool steps = false;
   while (!isOnlyNum(eq))
   {
     res = Calculator::arithCalc(eq);
     s = Calculator::start_eq;
     e = Calculator::end_eq;
     eq.replace(s, e, std::to_string(res));
+    if(steps){
     std::cout << "eq: " << eq << '\n';
+    }
   }
 
   std::cout << "res: " << res << std::endl;
