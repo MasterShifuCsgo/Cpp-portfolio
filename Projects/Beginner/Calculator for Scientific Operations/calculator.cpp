@@ -56,36 +56,23 @@ void Calculator::isParensLegal(std::string &eq)
 
 void Calculator::isOpRowLegal(std::string &eq)
 {
-  // operators xx
-  std::vector<char> ops = Calculator::operators;
 
-  // O(n*m)
+  int op_it{};
 
-  // could be O(n) if ops was an unordered_set or hash table.
-  size_t n = eq.size();
-  size_t m = ops.size();
-
-  bool is_op = false;
-
-  for (size_t i{0}; i < n; i++)
+  for (size_t i{}; i < eq.size(); ++i)
   {
-    if (ispunct(eq[i]))
+    if (ispunct(eq[i]) && eq[i] == '^')
     {
-      for (size_t j = 0; j < m; ++j)
-      {
-        if (eq[i] == ops[j])
-        {
-          if (is_op)
-          {
-            Calculator::error("operator", "found ops beside each other");
-          }
-          is_op = true;
-        }
-        else
-        {
-          is_op = false;
-        }
-      }
+      op_it++;
+    }
+    else
+    {
+      op_it = 0;
+    }
+
+    if (op_it >= 2)
+    {
+      Calculator::error("operator", "multiple operators found in a row");
     }
   }
 }
@@ -380,15 +367,16 @@ int Calculator::calculate(std::string &eq)
   int s{};
   int e{};
 
-  bool steps = false;
+  bool steps = true;
   while (!isOnlyNum(eq))
   {
     res = Calculator::arithCalc(eq);
     s = Calculator::start_eq;
     e = Calculator::end_eq;
     eq.replace(s, e, std::to_string(res));
-    if(steps){
-    std::cout << "eq: " << eq << '\n';
+    if (steps)
+    {
+      std::cout << "eq: " << eq << '\n';
     }
   }
 
