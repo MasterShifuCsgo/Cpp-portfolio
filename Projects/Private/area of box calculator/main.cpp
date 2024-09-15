@@ -3,7 +3,6 @@
 
 float CalcBoxArea(float l, float w, float h)
 {
-
   return 2 * l * w + 2 * l * h + 2 * w * h;
 }
 
@@ -15,7 +14,7 @@ int main()
   float hei{};
 
   std::cout << "please enter box details (length, width, height)\n";
-
+  
   std::cout << "  length: ";
   std::cin >> len;
   std::cout << "  width: ";
