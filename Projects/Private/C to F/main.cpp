@@ -28,7 +28,7 @@ int main()
 
   uppercaseType = type;
   type = tolower(type);
-  type == 'c' ? otherType = 'F' : otherType = 'C';
+  otherType = type == 'c' ? 'F' : 'C';
 
   std::cout << "enter the \"" << uppercaseType << "\" amount >> ";
   std::cin >> amount;
