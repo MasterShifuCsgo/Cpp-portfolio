@@ -5,10 +5,10 @@ all of these projects are in the projects/ folder
 
 ## Beginners Level
 
-<br/>CGPA Calculator &#x2714;
-<br/>Rock Paper Scissor &#x2714;
-<br/>Casino Number Guessing Game &#x2714;
-<br/>Calculator for Scientific Operations &#x2714;
+<br/>CGPA Calculator &#x2705;
+<br/>Rock Paper Scissor &#x2705;
+<br/>Casino Number Guessing Game &#x2705;
+<br/>Calculator for Scientific Operations &#x2705;
 <br/>Login and Registration System &#x2705;
 <br/>Student Database Management System
 <br/>Inventory System
