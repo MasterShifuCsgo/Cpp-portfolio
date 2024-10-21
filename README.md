@@ -9,7 +9,7 @@ all of these projects are in the projects/ folder
 <br/>Rock Paper Scissor &#x2714;
 <br/>Casino Number Guessing Game &#x2714;
 <br/>Calculator for Scientific Operations &#x2714;
-<br/>Login and Registration System &#127959;&#65039; 
+<br/>Login and Registration System &#x2705;
 <br/>Student Database Management System
 <br/>Inventory System
 <br/>Payroll System
