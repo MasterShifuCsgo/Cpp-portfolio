@@ -1,61 +1,61 @@
 GPT-4o Gen. text
 
 Completely Done:
-✅ (Check Mark): Indicates that something is completed.
-✔️ (Heavy Check Mark): Another symbol for completion.
-🏁 (Checkered Flag): Represents finishing or completion.
-🎉 (Party Popper): Celebrates something being finished.
-🎯 (Bullseye): Signifies hitting the target or completing the goal.
-🔒 (Locked): Implies that something is finalized and secure.
+&#x2705;  ✅ (Check Mark): Indicates that something is completed.
+&#x2714;&#xFE0F; ✔️ (Heavy Check Mark): Another symbol for completion.
+&#x1F3C1;  🏁 (Checkered Flag): Represents finishing or completion.
+&#x1F389; 🎉 (Party Popper): Celebrates something being finished.
+&#x1F3AF;  🎯 (Bullseye): Signifies hitting the target or completing the goal.
+&#x1F512;  🔒 (Locked): Implies that something is finalized and secure.
 
 Partially done:
-🏗️ (Construction): Represents something still being built.
-⚙️ (Gear): Implies that something is still being worked on or has moving parts.
-🧩 (Puzzle Piece): Suggests that part of a larger picture is in place, but more is needed.
-🔄 (Refresh): Indicates an ongoing process or that more updates are coming.
-🚧 (Construction Barrier): Shows work in progress.
-🔧 (Wrench): Implies adjustments or additions are still needed.
-📈 (Chart Increasing): Can suggest progress, but not yet complete.
-⏳ (Hourglass Not Done): Indicates something is still in progress.
-📝 (Memo): Suggests there are notes or tasks still to be completed.
-📊 (Bar Chart): Represents ongoing progress or development.
-🔍 (Magnifying Glass): Indicates more inspection or details are needed.
-🛠️ (Hammer and Wrench): Implies building or fixing is still ongoing.
+&#x1F3D7;&#xFE0F;🏗️ (Construction): Represents something still being built.
+&#x2699;&#xFE0F; ⚙️ (Gear): Implies that something is still being worked on or has moving parts.
+&#x1F9E9;🧩 (Puzzle Piece): Suggests that part of a larger picture is in place, but more is needed.
+&#x1F504;🔄 (Refresh): Indicates an ongoing process or that more updates are coming.
+&#x1F6A7;🚧 (Construction Barrier): Shows work in progress.
+&#x1F527;🔧 (Wrench): Implies adjustments or additions are still needed.
+&#x1F4C8;📈 (Chart Increasing): Can suggest progress, but not yet complete.
+&#x23F3; ⏳ (Hourglass Not Done): Indicates something is still in progress.
+&#x1F4DD;📝 (Memo): Suggests there are notes or tasks still to be completed.
+&#x1F4CA;📊 (Bar Chart): Represents ongoing progress or development.
+&#x1F50D;🔍 (Magnifying Glass): Indicates more inspection or details are needed.
+&#x1F6E0;&#xFE0F; 🛠️ (Hammer and Wrench): Implies building or fixing is still ongoing.
 
 Completely Undone:
-❌ (Cross Mark): Indicates that something is not done or has been canceled.
-🚫 (No Entry): Denotes prohibition or something that hasn't started or is stopped.
-🔓 (Unlocked): Suggests that something is open or not secured, implying incompletion.
-❗ (Exclamation Mark): Can emphasize something needing attention or that something important hasn't been addressed.
-🕳️ (Hole): Implies a gap or something missing.
+&#x274C;  ❌ (Cross Mark): Indicates that something is not done or has been canceled.
+&#x1F6AB; 🚫 (No Entry): Denotes prohibition or something that hasn't started or is stopped.
+&#x1F513; 🔓 (Unlocked): Suggests that something is open or not secured, implying incompletion.
+&#x2757;  ❗ (Exclamation Mark): Can emphasize something needing attention or that something important hasn't been addressed.
+&#x1F573;&#xFE0F; 🕳️ (Hole): Implies a gap or something missing.
 
 Working but Has Many Errors:
-⚠️ (Warning): Indicates there are issues or errors present.
-🛑 (Stop Sign): Suggests significant errors or halts due to issues.
-🔧 (Wrench): Implies something needs fixing due to errors.
-🛠️ (Hammer and Wrench): Indicates ongoing work and errors needing resolution.
-🔄 (Refresh): Implies repeated attempts due to errors.
-🐛 (Bug): Represents bugs or errors in the system.
-🚧 (Construction Barrier): Shows work in progress with many issues.
-🤯 (Exploding Head): Conveys frustration due to numerous errors.
-❗ (Exclamation Mark): Emphasizes the presence of errors that need attention.
+&#x26A0;&#xFE0F; ⚠️ (Warning): Indicates there are issues or errors present.
+&#x1F6D1;  🛑 (Stop Sign): Suggests significant errors or halts due to issues.
+&#x1F527;  🔧 (Wrench): Implies something needs fixing due to errors.
+&#x1F6E0;&#xFE0F 🛠️ (Hammer and Wrench): Indicates ongoing work and errors needing resolution.
+&#x1F504; 🔄 (Refresh): Implies repeated attempts due to errors.
+&#x1F41B; 🐛 (Bug): Represents bugs or errors in the system.
+&#x1F6A7; 🚧 (Construction Barrier): Shows work in progress with many issues.
+&#x1F92F; 🤯 (Exploding Head): Conveys frustration due to numerous errors.
+&#x2757;  ❗ (Exclamation Mark): Emphasizes the presence of errors that need attention.
 
 Work Not Started:
-🕛 (Clock at 12:00): Symbolizes the beginning, as if something is about to start.
-🛑 (Stop Sign): Indicates a halt or that nothing has started yet.
-💤 (Sleeping Symbol): Suggests inactivity or something that hasn't been begun.
-📅 (Calendar): Represents a scheduled task or something planned but not yet started.
-🗒️ (Spiral Notepad): Indicates something is in the planning phase, not started yet.
+&#x1F55B;  🕛 (Clock at 12:00): Symbolizes the beginning, as if something is about to start.
+&#x1F6D1;  🛑 (Stop Sign): Indicates a halt or that nothing has started yet.
+&#x1F4A4;  💤 (Sleeping Symbol): Suggests inactivity or something that hasn't been begun.
+&#x1F4C5;  📅 (Calendar): Represents a scheduled task or something planned but not yet started.
+&#x1F5D2;&#xFE0F; 🗒️ (Spiral Notepad): Indicates something is in the planning phase, not started yet.
 
 
 Doesn't Have Many Errors:
-👍 (Thumbs Up): Indicates things are going well with minimal errors.
-✅ (Check Mark): Represents a mostly error-free status.
-✔️ (Heavy Check Mark): Another symbol for minimal errors.
-🟢 (Green Circle): Suggests things are running smoothly.
-📈 (Chart Increasing): Implies good progress with few errors.
-🌟 (Star): Represents high quality with few issues.
-🎉 (Party Popper): Celebrates the smooth functioning with minimal errors.
-🔍 (Magnifying Glass): Implies that even close inspection reveals few errors.
-🤝 (Handshake): Suggests successful collaboration with few errors.
-🛡️ (Shield): Indicates protection from errors or issues.
+&#x1F44D;👍 (Thumbs Up): Indicates things are going well with minimal errors.
+&#x2705; ✅ (Check Mark): Represents a mostly error-free status.
+&#x2714;&#xFE0F; ✔️ (Heavy Check Mark): Another symbol for minimal errors.
+&#x1F7E2; 🟢 (Green Circle): Suggests things are running smoothly.
+&#x1F4C8; 📈 (Chart Increasing): Implies good progress with few errors.
+&#x1F31F; 🌟 (Star): Represents high quality with few issues.
+&#x1F389; 🎉 (Party Popper): Celebrates the smooth functioning with minimal errors.
+&#x1F50D; 🔍 (Magnifying Glass): Implies that even close inspection reveals few errors.
+&#x1F91D; 🤝 (Handshake): Suggests successful collaboration with few errors.
+&#x1F6E1;&#xFE0F;🛡️ (Shield): Indicates protection from errors or issues.

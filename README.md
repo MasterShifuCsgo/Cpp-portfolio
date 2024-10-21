@@ -10,8 +10,8 @@ all of these projects are in the projects/ folder
 <br/>Casino Number Guessing Game &#x2705;
 <br/>Calculator for Scientific Operations &#x2705;
 <br/>Login and Registration System &#x2705;
-<br/>Student Database Management System
-<br/>Inventory System
+<br/>Student Database Management System &#x2705;
+<br/>Inventory System &#x23F3;
 <br/>Payroll System
 <br/>Banking System
 <br/>Medical Information System
